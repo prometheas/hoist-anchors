@@ -22,7 +22,6 @@
 
 		var options = this.options;
 
-		$( this.element ).css({"background-color": "red"});
 		$( this.element ).find( options.anchorSelector ).each(function( index, element) {
 
 			var $anchor = $( element );

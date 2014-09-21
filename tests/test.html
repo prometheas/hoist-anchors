@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Hoist Anchors test</title>
+	<style type="text/css">
+		#anchors li
+		{
+			background-color: lightgray;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<ul id="anchors">
+		<li>
+			<a href="#before" class="hoist-anchor" data-hoist-type="before">Anchor 1</a>
+		</li>
+		<li>
+			<a href="#after" class="hoist-anchor" data-hoist-type="after">Anchor 2</a>
+		</li>
+		<li>
+			<a href="#replace" class="hoist-anchor" data-hoist-type="replace">Anchor 3</a>
+		</li>
+		<li>
+			<a href="#content" class="hoist-anchor" data-hoist-type="content">Anchor 4</a>
+		</li>
+		<li>
+			<a href="#append" class="hoist-anchor" data-hoist-type="append">Anchor 5</a>
+		</li>
+	</ul>
+
+	<section id="hoists">
+		<div id="before">I should be before my anchor.</div>
+		<div id="after">I should be after my anchor.</div>
+		<div id="replace">I should have replaced my anchor.</div>
+		<div id="content">I should be inside my anchor.</div>
+		<div id="append">I should be appended to my anchor contents.</div>
+	</section>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="hoist-anchors.js"></script>
+
+<script type="text/javascript">
+
+	(function( $ ) {
+		$(function() {
+			$.hoistAnchors('html');
+		});
+	})( jQuery );
+
+</script>
+
+</body>
+</html>

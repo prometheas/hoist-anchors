@@ -1,0 +1,37 @@
+{
+  "name": "hoist-anchors",
+  "title": "Hoist Anchors",
+  "description": "A simple mobile-first Responsive Design utility that provides simple DOM alteration for JavaScript capable clients.",
+  "version": "0.9",
+  "author": {
+    "name": "John Lianoglou",
+    "url": "https://github.com/prometheas/"
+  },
+  "homepage": "https://github.com/prometheas/hoist-anchors",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/prometheas/hoist-anchors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prometheas/hoist-anchors/issues"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "keywords": [
+    "rwd",
+    "responsive-design",
+    "jquery",
+    "mobile-first"
+  ],
+  "main": "hoist-anchors.js",
+  "dependencies": {
+    "jquery": ">=1.4"
+  },
+  "devDependencies": {
+    "jquery": "0.3.x",
+    "grunt-git-authors": "1.0.0",
+    "testswarm": "0.2.2"
+  }
+}
